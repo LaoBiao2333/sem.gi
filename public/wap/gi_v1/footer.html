@@ -1,0 +1,85 @@
+<div class="glory">
+	<h4><span>世界指数产品</span><i></i><span>齐聚全球指数</span></h4>
+	<div class="box flex">
+		<div class="item">
+			<i class="gi2"></i>
+			<p>2016年度<br />最受欢迎交易商</p>
+		</div>
+		<div class="item">
+			<i class="gi3"></i>
+			<p>最佳<br />指数交易平台</p>
+		</div>
+		<div class="item">
+			<i class="gi4"></i>
+			<p>最佳<br />指数经纪商</p>
+		</div>			
+	</div>
+</div>
+<div class="footer">
+	<div class="box">
+		<div class="item">
+			<i class="fi1"></i>
+			<p>专业风控<br />团队</p>
+		</div>				
+		<div class="item">
+			<i class="fi4"></i>
+			<p>支持超短线<br />交易</p>
+		</div>
+		<div class="item">
+			<i class="fi5"></i>
+			<p>支持智能化<br />交易</p>
+		</div>
+	</div>
+	<div class="box">
+		<div class="item">
+			<i class="fi2"></i>
+			<p>交易订单实时<br />查询</p>
+		</div>
+		<div class="item">
+			<i class="fi3"></i>
+			<p>顶级行业分<br />析师</p>
+		</div>
+	</div>
+	<p class="cr">版权所有 © Global Index Investment Market Limted</p>
+</div>
+<div class="fixed_bottom">
+	<i class="close_f"></i>
+	<b></b>
+	<div class="con">
+		<p><span>新用户开户</span><br />即送200美元</p>
+		<a href="javascript:open_form();"><i></i>立即开户</a>
+	</div>			
+</div>
+<div class="form_box">
+	<div class="box">
+		<i class="close_r"></i>
+		<iframe src="http://reg.globalidx.com.cn/account/mgi_v1" frameborder="0" scrolling="no" width="" height=""></iframe>
+	</div>
+</div>
+<script type="text/javascript">
+	$(".fixed_bottom .close_f").click(function(){
+		$(".fixed_bottom").hide();
+		$('body').css('paddingBottom','0')
+	})
+	function open_form(){
+		$(".form_box").show();
+	}
+
+	$(".form_box .close_r").on('touchstart click',function(){
+		$(".form_box").hide();	
+		$(".form_box iframe").attr("src", 'http://reg.globalidx.com.cn/account/mgi_v1');
+	})
+	
+	var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1 ||u.indexOf('Windows') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    
+    var ios = 'https://itunes.apple.com/cn/app/fm-trader/id1388953587?mt=8';
+    var android = 'http://m.globalidx.com.cn/index/giapk';
+    if(isAndroid){
+        $(".downLoad").attr('href',android)
+    }
+    if(isiOS){
+        $(".downLoad").attr('href',ios)
+    }
+</script>

@@ -1,0 +1,183 @@
+<div class="glory">
+	<h4><span>世界指数产品</span><i></i><span>齐聚全球指数</span></h4>
+	<div class="box clearfix">
+		<div class="item">
+			<i class="gi1"></i>
+			<p>亚洲最佳客户<br />服务经纪商</p>
+		</div>
+		<div class="item">
+			<i class="gi2"></i>
+			<p>2016年度<br />最受欢迎交易商</p>
+		</div>
+		<div class="item">
+			<i class="gi3"></i>
+			<p>最佳<br />指数交易平台</p>
+		</div>
+		<div class="item">
+			<i class="gi4"></i>
+			<p>最佳<br />指数经纪商</p>
+		</div>
+		<div class="item">
+			<i class="gi5"></i>
+			<p>最具潜力<br />金融服务经纪商</p>
+		</div>
+		<div class="item">
+			<i class="gi6"></i>
+			<p>2016年度<br />杰出金融服务品牌</p>
+		</div>				
+	</div>
+</div>
+<div class="footer">
+	<div class="box">
+		<div class="item">
+			<i class="fi1"></i>
+			<p>专业风控团队</p>
+		</div>
+		<div class="item">
+			<i class="fi2"></i>
+			<p>交易订单实时查询</p>
+		</div>
+		<div class="item">
+			<i class="fi3"></i>
+			<p>顶级行业分析师</p>
+		</div>
+		<div class="item">
+			<i class="fi4"></i>
+			<p>支持超短线交易</p>
+		</div>
+		<div class="item">
+			<i class="fi5"></i>
+			<p>支持智能化交易</p>
+		</div>
+	</div>
+	<p class="cr">版权所有 © Global Index Investment Market Limted</p>
+</div>
+
+<div class="fixed_right">
+	<i></i>
+	<a href="javascript:contact();">马上咨询领取</a>
+</div>
+<div class="fixed_bottom">
+	<div class="container">
+		<i></i>
+		<div class="btn_box">
+			<a href="javascript:contact();" class="g_btn">领取赠金</a>
+			<a href="javascript:open_form();" class="r_btn">立即开户</a>
+		</div>				
+	</div>			
+</div>
+<script type="text/javascript">
+	var winH = $(window).scrollTop();
+	var fixed = $('.header').height() + $('.banner').height();
+	if(winH>fixed){
+		$(".fixed_bottom").fadeIn();
+	}else{
+		$(".fixed_bottom").fadeOut();
+	}
+	var fixed_bottom = true;
+	$(window).scroll(function(){
+		if(fixed_bottom){
+			winH = $(window).scrollTop();
+			if(winH>fixed){
+				$(".fixed_bottom").fadeIn();
+			}else{
+				$(".fixed_bottom").fadeOut();
+			}
+		}				
+	})
+	$(".fixed_bottom i").click(function(){
+		$(".fixed_bottom").hide();
+		fixed_bottom = false;
+		$('body').css({'paddingBottom':'0'})
+	})
+	var fixed_r;
+	$(".fixed_right a").hover(function(){					
+		$(".fixed_right i").addClass('on');
+		fixed_r = setInterval(function(){
+			$(".fixed_right i").removeClass('on');
+			setTimeout(function(){
+				$(".fixed_right i").addClass('on');
+			},1000)
+		},3000)
+	},function(){
+		if(fixed_r){
+			clearInterval(fixed_r)
+		}
+		$(".fixed_right i").removeClass('on');
+	})
+	
+</script>
+<div class="dowanload_madal">
+    <div class="modal animated show_modal">
+        <i class="close_dl_modal"></i>
+        <div class="item pc fl">
+            <h4>Windows</h4>
+            <p>桌上型电脑专用交易软件</p>
+            <div class="modal_img">
+                <img src="../../../public/web/gi_v1/images/dl_pc.png">
+            </div>
+            <a target="_blank" href="http://img.globalidx.net/uploads/gi/20180626/GIV4Setup.exe">立即下载</a>
+        </div>
+        <div class="item ios fl">
+            <h4>iPhone</h4>
+            <p>苹果iOS手机专用交易软件</p>
+            <div class="modal_img">
+                <img src="../../../public/web/gi_v1/images/dl_ios.png" class="modal_p">
+                <div class="qr_code">
+                    <img src="../../../public/web/gi_v1/images/ios.png" alt="">
+                    <span class="dowanload-btn">扫描二维码下载<br> <br>组别编号：81002</span>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="qr_btn">立即下载</a>
+        </div>
+        <div class="item android fl">
+            <h4>Android</h4>
+            <p>Android手机专用交易软件</p>
+            <div class="modal_img ">
+                <img src="../../../public/web/gi_v1/images/dl_an.png"  class="modal_p">
+                <div class="qr_code">
+                    <img src="../../../public/web/gi_v1/images/android.png" alt="">
+                    <span class="dowanload-btn">扫描二维码下载</span>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="qr_btn">立即下载</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	$(".dowanload_madal .qr_btn").click(function(){
+		$(this).siblings('.modal_img').find(".modal_p").addClass('animated fadeOutDown');
+		$(this).siblings('.modal_img').find(".qr_code").show();
+		$(this).siblings('.modal_img').find(".qr_code").addClass('animated fadeInUp');
+	})
+    $(".dowanload_madal .close_dl_modal").click(function () {
+        $(".dowanload_madal .modal").removeClass("show_modal").addClass("hide_modal");
+        $(".dowanload_madal").delay(500).fadeOut(function () {
+            $('div[id^="codeimg_"]').hide();
+            $('img[id^="img_"]').removeClass('animated fadeOutDown');
+            $('div[id^="codeimg_"]').removeClass('animated fadeInUp');
+            $(".dowanload_madal .modal").removeClass("hide_modal");
+        });
+    })
+
+    function open_download() {
+        $(".dowanload_madal").show();
+        $(".dowanload_madal .modal").addClass('animated show_modal');
+    }
+</script>
+
+<div class="form_box">
+	<div class="box">	
+		<i></i>
+		<iframe src="http://reg.globalidx.com.cn/account/gi_v1" frameborder="0" scrolling="no" width="" height=""></iframe>
+	</div>
+</div>
+<script type="text/javascript">
+	function open_form(){
+		$(".form_box").show();
+	}
+	$(".form_box i").click(function(){
+		$(".form_box").hide();	
+		$(".form_box iframe").attr("src", 'http://reg.globalidx.com.cn/account/gi_v1');
+	})
+</script>

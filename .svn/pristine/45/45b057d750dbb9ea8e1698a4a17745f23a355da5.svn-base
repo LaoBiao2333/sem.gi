@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public/web/gi_v1/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--[if (gte IE 10)|(!IE)]> -->
+			<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		 	<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				$(function(){
+					new WOW().init();
+				})	
+			</script>
+		<!--<![endif]-->
+	</head>
+	<body>
+		<div id="header">
+			<script type="text/javascript">
+				$("#header").load("../../public/web/gi_v1/header.html");
+			</script>
+		</div>
+		<div class="banner">
+			<div class="tit_1 wow fadeInDown">
+				<img src="images/btit.png"/>
+			</div>
+			<div class="ban_btn wow fadeInUp ">
+				<a href="javascript:contact();" class="g_btn">领取赠金</a>
+				<a href="javascript:contact();" class="c_btn">咨询客服</a>
+			</div>
+			<div class="tit_2 wow fadeInUp" data-wow-duration = "0.5s">
+				<div class="mask">
+					<img src="images/btit4.png" alt="" />
+				</div>
+				<div class="money wow fadeInUp" data-wow-delay="0.8s">
+					<div class="money1">
+						<img src="images/money1.png"/>
+					</div>
+					<div class="money2 wow mbounceInRight" data-wow-delay="1.3s" data-wow-duration = "0.5s">
+						<img src="images/money2.png"/>
+					</div>
+					<div class="money3 wow mbounceInLeft" data-wow-delay="1.3s" data-wow-duration = "0.5s">
+						<img src="images/money3.png"/>
+					</div>
+				</div>
+				
+				<img src="images/tit_2.png" alt="" />				
+			</div>	
+			<div class="carton1 wow fadeInLeft">
+				<a href="javascript:open_download();"></a>
+				<img src="images/carton1.png"/>
+			</div>
+			<div class="carton2 wow fadeInRight">
+				<a href="javascript:open_form();"></a>
+				<img src="images/carton2.png"/>
+				<img src="images/blink.gif" class="eye"/>
+			</div>
+			<div class="glod">
+				<div class="g1">
+					<img src="images/gold1.png"/>
+				</div>
+				<div class="g2">
+					<img src="images/gold2.png"/>
+				</div>
+				<div class="g3">
+					<img src="images/gold3.png"/>
+				</div>
+				<div class="g4">
+					<img src="images/gold4.png"/>
+				</div>
+				<div class="g5">
+					<img src="images/gold5.png"/>
+				</div>
+				<div class="g6">
+					<img src="images/gold6.png"/>
+				</div>
+				<div class="g7">
+					<img src="images/gold7.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="advantage">
+			<div class="container">
+				<div class="box">
+					<div class="item clearfix">
+						<i class="ai1"></i>
+						<div class="txt">
+							<h4>超低成本</h4>
+							<p>低点差0手续费 无交易量限制</p>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<i class="ai2"></i>
+						<div class="txt">
+							<h4>双向获利</h4>
+							<p>T+0双向交易 涨跌都能盈利</p>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<i class="ai3"></i>
+						<div class="txt">
+							<h4>轻松入门</h4>
+							<p>新手一对一指引 8美元起投</p>
+						</div>
+					</div>
+					<div class="item clearfix">
+						<i class="ai4"></i>
+						<div class="txt">
+							<h4>实时数据</h4>
+							<p>桥接国际市场 更新20次/秒</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cause">
+			<div class="container">
+				<h3><i class="l"></i>为什么选择 Globalidx 全球指数<i class="r"></i></h3>
+				<div class="box  clearfix">
+					<div class="item c1 wow fadeInLeft">
+						<i class="ci1"></i>
+						<h4>极速开户</h4>
+						<p>告别传统繁琐开户流程<br />首创30秒便捷开户</p>
+					</div>
+					<div class="item c2 wow fadeInLeft" data-wow-delay="0.3s">
+						<i class="ci2"></i>
+						<h4>高效执行</h4>
+						<p>无与伦比的执行速度<br />体验从未有过的极致流畅</p>
+					</div>
+					<div class="item c1 wow fadeInLeft" data-wow-delay="0.6s">
+						<i class="ci3"></i>
+						<h4>VIP指导服务</h4>
+						<p>无与伦比的执行速度<br />体验从未有过的极致流畅</p>
+					</div>
+					<div class="item c2 nr wow fadeInLeft" data-wow-delay="0.9s">
+						<i class="ci4"></i>
+						<h4>高效执行</h4>
+						<p>无与伦比的执行速度<br />体验从未有过的极致流畅</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="welfare">
+			<div class="container">
+				<h3><i class="l"></i>新手用户 福利在这里<i class="r"></i></h3>
+				<div class="box wow fadeInUp">
+					<div class="item w1 wow nfadeInDown" data-wow-delay="0.5s">
+						<img src="images/welfare1.png"/>
+						<span>新手指南<br />快速入门</span>
+					</div>
+					<div class="item w2 wow nfadeInDown" data-wow-delay="0.5s">
+						<img src="images/welfare2.png"/>
+						<span>新手专享 美金礼包</span>
+					</div>
+					<div class="item w3 wow nfadeInDown" data-wow-delay="0.5s">
+						<img src="images/welfare3.png"/>
+						<span>产品多元 惊喜收益</span>
+					</div>
+				</div>
+				<a href="javascript:contact();">立即领取</a>
+			</div>				
+		</div>
+		<div class="flow">
+			<div class="container">
+				<h3><i class="l"></i>指数盈利流程 <i class="r"></i></h3>
+				<div class="box clearfix">
+					<div class="item wow fadeInLeft">
+						<span>第一步</span>
+						<p>开立实盘账户</p>
+						<a href="javascript:open_form();">立即注册</a>
+					</div>	
+					<div class="item wow fadeInLeft" data-wow-delay="0.3s">
+						<span>第二步</span>
+						<p>绑定身份及银行信息</p>
+						<a href="javascript:open_form();">完善资料</a>
+					</div>	
+					<div class="item wow fadeInLeft" data-wow-delay="0.6s">
+						<span>第三步</span>
+						<p>下载软件开始交易</p>
+						<a href="javascript:open_download();">点击下载</a>
+					</div>	
+					<div class="item nr wow fadeInLeft" data-wow-delay="0.9s">
+						<span>第四步</span>
+						<p>判断行情下单操作盈利</p>
+						<a href="javascript:contact();">行情分析</a>
+					</div>	
+				</div>	
+			</div>
+		</div>
+		<script type="text/javascript">
+			setTimeout(function(){
+				$(".banner .glod div").addClass("on");
+			},200)			
+		</script>
+		<div id="footer">
+			<script type="text/javascript">
+				$("#footer").load("../../public/web/gi_v1/footer.html");
+			</script>
+		</div>
+		<div style="display: none;">
+			<script src="../../public/public.js" type="text/javascript" charset="utf-8"></script>
+		</div>
+	</body>
+</html>

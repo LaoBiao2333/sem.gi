@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta content="telephone=no" name="format-detection" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="../../public/wap/gi_v1/css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!-- <script src="./js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script> -->
+	<!--[if (gte IE 9)|(!IE)]>-->
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript">
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+    </script>
+	<!--<![endif]-->
+	<script src="./js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		function size() {
+			var width = $(window).width();
+			if (width > 750) {
+				$('html').css('font-size', function () {
+					return 100;
+				});
+				return;
+			} else {
+				$('html').css('font-size', function () {
+					return 100 * width / 750;
+				});
+			}
+		}
+		size();
+		$(window).resize(function () {
+			size();
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<script type="text/javascript">
+			$("#header").load("../../public/wap/gi_v1/header.html");
+		</script>
+	</div>
+    <div class="content">
+        <div class="banner">
+            <div class="banner-btn">
+                <a href="javascript:open_form();" class="account">马上开户</a>
+                <a href="javascript:contact();" class="service">咨询客服</a>
+            </div>
+        </div>
+        <div class="b1 box">
+            <h2></h2>
+            <ul>
+                <li class="b1-li1 wow flipInY"><i class="i1"></i>英国富时100指数<i class="i2"></i></li>
+                <li class="b1-li2 wow flipInY"><i class="i1"></i>纳斯达克指数<i class="i2"></i></li>
+                <li class="b1-li3 wow flipInY"><i class="i1"></i>美元指数<i class="i2"></i></li>
+                <li class="b1-li4 wow flipInY"><i class="i1"></i>德国DAX指数<i class="i2"></i></li>
+                <li class="b1-li5 wow flipInY"><i class="i1"></i>富时中国A50指数<i class="i2"></i></li>
+                <li class="b1-li6 wow flipInY"><i class="i1"></i>香港恒生指数<i class="i2"></i></li>
+                <li class="b1-li7 wow flipInY"><i class="i1"></i>道琼斯工业指数<i class="i2"></i></li>
+            </ul>
+        </div>
+        <div class="b2 box">
+            <h2></h2>
+            <div class="b2-slider-wrap swiper-container">
+                <div class="b2-slider swiper-wrapper clearfix">
+                    <div class="slider swiper-slide slider1">
+                        <div class="slider-box">
+                            <img src="./images/b2_sliderbg1.png" alt="">
+                            <span class="wow fadeInUp span1"><b></b></span>
+                            <span class="wow fadeInUp span2"><b></b></span>
+                        </div>
+                    </div>
+                    <div class="slider swiper-slide slider2">
+                        <div class="slider-box sliderbox-2">
+                            <img src="./images/b2_sliderbg2.png" alt="">
+                            <span class="span1"><b></b></span>
+                            <span class="span2"><b></b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-button swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="b3 box">
+            <h2></h2>
+            <ul class="">
+                <li class="b3-li1">
+                    <span>超低成本</span>
+                    <p><b>0元</b>佣金<b>8美元</b>即可交易</p>
+                </li>
+                <li class="b3-li2">
+                    <span>超高盈利</span>
+                    <p> 保证金交易<b>以小博大</b></p>
+                </li>
+                <li class="b3-li3">
+                    <span>超强指导</span>
+                    <p>顶级分析师在线<br/>VIP尊享 <b>1对1指导</b></p>
+                </li>
+                <li class="b3-li4">
+                    <span>超级服务</span>
+                    <p>24小时在线客服<br/><b>专属客户经理</b></p>
+                </li>
+                <li class="b3-li5">
+                    <span>超小风险</span>
+                    <p>入金即时到账<br/><b>出金最快2小时内到账</p>
+                </li>
+            </ul>
+            <div class="b3-btn">
+                <a href="javascript:open_form();" class="service">咨询客服</a>
+                <a href="javascript:contact();" class="account">马上开户</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+		<script type="text/javascript">
+			$("#footer").load("../../public/wap/gi_v1/footer.html");
+		</script>
+	</div>
+    <script>
+        $(function () {
+            $(".banner").mousemove(function (e) {
+                var x = (e.pageX * -1 / 2), y = (e.pageY * -1 / 2);
+                $(this).find("img").css('left', (x /30)+ 'px ' );
+                $(this).find("img").css('top', (y /30)+ 'px ' );
+            })
+            var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+                loop: true,
+                spaceBetween: 10,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                onTransitionStart: function () {
+                    $(".b2-slider .slider span").removeClass("animated fadeInUp").attr('style','');
+                    $(".b2-slider .slider.swiper-slide-active span").addClass('animated fadeInUp').attr('style','visibility: visible; animation-name: fadeInUp;');
+                }
+            });
+        })
+    </script>
+    <div style="display: none;">
+		<script src="../../public/public.js" type="text/javascript" charset="utf-8"></script>
+	</div>
+</body>
+</html>

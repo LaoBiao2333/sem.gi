@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta content="telephone=no" name="format-detection" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="../../public/wap/gi_v1/css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!--[if (gte IE 9)|(!IE)]>-->
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript">
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+    </script>
+	<!--<![endif]-->
+	<script src="./js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		function size() {
+			var width = $(window).width();
+			if (width > 750) {
+				$('html').css('font-size', function () {
+					return 100;
+				});
+				return;
+			} else {
+				$('html').css('font-size', function () {
+					return 100 * width / 750;
+				});
+			}
+		}
+		size();
+		$(window).resize(function () {
+			size();
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<script type="text/javascript">
+			$("#header").load("../../public/wap/gi_v1/header.html");
+		</script>
+	</div>
+    <div class="content">
+        <div class="banner">
+            <img src="./images/banner_img.png" alt="" class="wow fadeInDown">
+            <div class="btn-box clearfix">
+                <a href="javascript:open_form();" class="account">马上开户</a>
+                <a href="javascript:contact();" class="service">领取赠金</a>
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="b1 box clearfix">
+                <h2><i></i>丰富的<b>交易品种</b><i class="i2"></i></h2>
+                <ul class="clearfix">
+                    <li class="b1-li1"><span><b>大宗商品</b></span></li>
+                    <li class="b1-li2"><span><b>富时中国<br/>A50</b></span></li>
+                    <li class="b1-li3"><span><b>道琼斯<br/>工业指数</b></span></li>
+                    <li class="b1-li4"><span><b>纳斯达克<br/>指数</b></span></li>
+                </ul>
+                <ul class="clearfix">
+                    <li class="b1-li5"><span><b>美元指数</b></span></li>
+                    <li class="b1-li6"><span><b>英国富时<br/>100指数</b></span></li>
+                    <li class="b1-li7"><span><b>德国<br/>DAX指数</b></span></li>
+                    <li class="b1-li8"><span><b>香港<br/>恒生指数</b></span></li>
+                </ul>
+            </div>
+            <div class="b2 box">
+                <h2><i></i>期货和股票相比的<b>几大优势</b><i class="i2"></i></h2>
+                <ul class="b2-wrap">
+                    <li class="b2-li1">
+                        <div class="wow fadeInLeft">
+                            <i class="b2-icon"></i>
+                            <i class="b2-line"></i>
+                            <b><i class="i1"></i>多空双向<i class="i2"></i></b>
+                            <span>买涨买跌<br/>双向交易</span>
+                        </div>
+                    </li>
+                    <li class="b2-li2">
+                        <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                            <i class="b2-icon"></i>
+                            <i class="b2-line"></i>
+                            <b><i class="i1"></i>超低门槛<i class="i2"></i></b>
+                            <span> 杠杆交易<br/>放大收益</span>
+                        </div>
+                    </li>
+                    <li class="b2-li3">
+                        <div class="wow fadeInLeft" data-wow-delay="0.4s">
+                            <i class="b2-icon"></i>
+                            <i class="b2-line"></i>
+                            <b><i class="i1"></i>T+0<i class="i2"></i></b>
+                            <span> 当日买卖<br/>瞬间盈利</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="b3 box">
+                <h2><i></i>股指期货开户及<b>交易流程</b><i class="i2"></i></h2>
+                <div class="b3-ul">
+                    <ul class="clearfix">
+                        <li class="b3-li1 wow fadeInLeft">
+                            <b class="b2">注册账户</b>
+                            <span>填写真实信息<br/>30秒免费开户</span>
+                        </li>
+                        <li class="b3-li2 wow fadeInLeft" data-wow-delay="0.2s">
+                            <b class="b2">安装软件</b>
+                            <span>安装并登录交易软件，选择产品进行交易</span>
+                        </li>
+                        <li class="b3-li3 wow fadeInLeft" data-wow-delay="0.4s">
+                            <b class="b2">操作盈利</b>
+                            <span>买涨买跌均可赚钱，这秒下单下秒盈利</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="b4 box clearfix">
+                <h2><i></i>顶级<b>技术支持</b><i class="i2"></i></h2>
+                <div class="b4-ul">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide b4-li b4-li1">
+                                <i class="b4-icon"></i>
+                                <b>GI Trader桥接技术</b>
+                                <i class="b4-line"></i>
+                                <span>千兆网络直连全球交易市场</span>
+                            </div>
+                            <div class="swiper-slide b4-li b4-li2">
+                                <i class="b4-icon"></i>
+                                <b>专业导师实时喊单</b>
+                                <i class="b4-line"></i>
+                                <span>最权威的指数行情分析建议</span>
+                            </div>
+                            <div class="swiper-slide b4-li b4-li3">
+                                <i class="b4-icon"></i>
+                                <b>多终端交易系统</b>
+                                <i class="b4-line"></i>
+                                <span>随时随地体验便捷投资乐趣</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box clearfix">
+                    <a href="javascript:open_form();" class="account">立即开户</a>
+                    <a href="javascript:contact();" class="service">领取赠金</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+		<script type="text/javascript">
+			$("#footer").load("../../public/wap/gi_v1/footer.html");
+		</script>
+	</div>
+    <script>
+        $(function () {
+            $(".banner").mousemove(function (e) {
+                var x = (e.pageX * -1 / 2), y = (e.pageY * -1 / 2);
+                $(this).find(".banner-move").css('left', (x /30)+ 'px ' );
+                $(this).find(".banner-move").css('top', (y /30 + 507)+ 'px ' );
+            })
+            var swiperB4 = new Swiper('.b4 .swiper-container', {
+                effect : 'coverflow',
+                loop : true,
+                slidesPerView: 1.7,
+                oopedSlides : 3,
+                centeredSlides: true,
+                coverflow: {
+                    rotate: 0,
+                    stretch: 30,
+                    depth: 120,
+                    modifier: 3,
+                    slideShadows : false
+                }
+            });
+        })
+    </script>
+    <div style="display: none;">
+		<script src="../../public/public.js" type="text/javascript" charset="utf-8"></script>
+	</div>
+</body>
+</html>

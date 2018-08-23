@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../public/web/gi_v1/css/common.css"/>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/animate.js"></script>
+    <!--[if (gte IE 9)|(!IE)]>-->
+    <script src="./js/wow.min.js"></script>
+    <script type="text/javascript">
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+    </script>
+    <!--<![endif]-->
+</head>
+<body>
+	<div id="header">
+		<script type="text/javascript">
+			$("#header").load("../../public/web/gi_v1/header.html");
+		</script>
+	</div>
+    <div class="content">
+        <div class="banner">
+            <img src="./images/banner_money.png" alt="">
+            <div class="banner-btn">
+                <a href="javascript:open_form();" class="account">马上开户</a>
+                <a href="javascript:contact();" class="service">咨询客服</a>
+            </div>
+        </div>
+        <div class="b1 box">
+            <h2></h2>
+            <ul>
+                <li class="b1-li1 wow flipInY"><i class="i1"></i>英国富时100指数<i class="i2"></i></li>
+                <li class="b1-li2 wow flipInY"><i class="i1"></i>纳斯达克指数<i class="i2"></i></li>
+                <li class="b1-li3 wow flipInY"><i class="i1"></i>美元指数<i class="i2"></i></li>
+                <li class="b1-li4 wow flipInY"><i class="i1"></i>德国DAX指数<i class="i2"></i></li>
+                <li class="b1-li5 wow flipInY"><i class="i1"></i>富时中国A50指数<i class="i2"></i></li>
+                <li class="b1-li6 wow flipInY"><i class="i1"></i>香港恒生指数<i class="i2"></i></li>
+                <li class="b1-li7 wow flipInY"><i class="i1"></i>道琼斯工业指数<i class="i2"></i></li>
+            </ul>
+        </div>
+        <div class="b2 box">
+            <h2></h2>
+            <div class="b2-slider-wrap">
+                <div class="b2-slider clearfix">
+                    <div class="slider slider1">
+                        <div class="slider-box">
+                            <i></i>
+                            <img src="./images/b2_sliderbg1.png" alt="">
+                            <span class="wow fadeInUp span1"><b></b></span>
+                            <span class="wow fadeInDown span2"><b></b></span>
+                        </div>
+                    </div>
+                    <div class="slider slider2">
+                        <div class="slider-box sliderbox-2">
+                            <i></i>
+                            <img src="./images/b2_sliderbg2.png" alt="">
+                            <span class="span1"><b></b></span>
+                            <span class="span2"><b></b></span>
+                        </div>
+                    </div>
+                    <div class="slider slider1 slider-clone">
+                        <div class="slider-box">
+                            <i></i>
+                            <img src="./images/b2_sliderbg1.png" alt="">
+                            <span class="span1"><b></b></span>
+                            <span class="span2"><b></b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+                <a href="javascript:void(0)" class="arrow-left arrow"></a>
+                <a href="javascript:void(0)" class="arrow-right arrow"></a>
+            </div>
+        </div>
+        <div class="b3 box">
+            <h2></h2>
+            <ul class="wow fadeInUp b3-ul1 clearfix">
+                <li class="b3-li1">
+                    <div class="li-top">
+                        <b></b>
+                        <span>超低成本</span>
+                    </div>
+                    <p><b>0元</b>佣金<b>8美元</b>即可交易</p>
+                </li>
+                <li class="b3-li2">
+                    <div class="li-top">
+                        <b></b>
+                        <span>超高盈利</span>
+                    </div>
+                    <p> 保证金交易，高倍杠杆，以<b>小</b>博<b>大</b>可交易</p>
+                </li>
+                <li class="b3-li3">
+                    <div class="li-top">
+                        <b></b>
+                        <span>超强指导</span>
+                    </div>
+                    <p>尊享顶级分析师在线<b>1</b>对<b>1</b>指导</p>
+                </li>
+            </ul>
+            <ul class="wow fadeInUp clearfix" data-wow-delay="0.2s">
+                <li class="b3-li4">
+                    <div class="li-top">
+                        <b></b>
+                        <span>超级服务</span>
+                    </div>
+                    <p><b>24小时</b>在线客服<b>专属</b>客户经理</p>
+                </li>
+                <li class="b3-li5">
+                    <div class="li-top">
+                        <b></b>
+                        <span>超小风险</span>
+                    </div>
+                    <p>入金<b>即时到账</b>出金最快<b>2小时</b>内到账</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+		<script type="text/javascript">
+			$("#footer").load("../../public/web/gi_v1/footer.html");
+		</script>
+	</div>
+    <script>
+        $(function () {
+            $(".banner").mousemove(function (e) {
+                var x = (e.pageX * -1 / 2), y = (e.pageY * -1 / 2);
+                $(this).find("img").css('left', (x /30)+ 'px ' );
+                $(this).find("img").css('top', (y /30)+ 'px ' );
+            })
+            var sliders = $(".b2-slider"),
+                arrowLeft = $("a.arrow-left"),
+                arrowRight = $("a.arrow-right"),
+                indicators = $("li.indicator"),
+                carouselWrap = $(".b2-slider-wrap");
+        })
+    </script>
+    <script>
+        var innerGroup = $(".slider");
+        var leftArrow = $(".arrow-left");
+        var rightArrow = $(".arrow-right");
+        var spanGroup = $(".pagination span");
+        var sliderBoxWidth = $(".slider .slider-box:first-child").eq(0).width() + 124;
+        var _index = 0;
+        var timer = null;
+        var flag = true;
+        rightArrow.on("click", function() {
+            //右箭头
+            if (flag) {
+                flag = false;
+                clearInterval(timer);
+                _index++;
+                selectPic(_index);
+            }
+            
+        })
+        leftArrow.on("click", function() {
+            //左箭头
+            if (flag) {
+                flag = false;
+                clearInterval(timer);
+                if (_index == 0) {
+                    _index = innerGroup.length - 1;
+                    $(".b2-slider").css("left", -(innerGroup.length - 1) * sliderBoxWidth);
+                }
+                _index--;
+                selectPic(_index);
+            }
+            
+        })
+        spanGroup.on("click", function() {
+            //导航切换
+            _index = spanGroup.index($(this));
+            selectPic(_index);
+        })
+
+        // $(".container").hover(function() {
+        //     //鼠标移入
+        //     clearInterval(timer);
+        //     flag = false;
+        // }, function() {
+        //     flag = true;
+        //     timer = setInterval(go, 3000);
+        // });
+
+        function autoGo(bol) {
+            //自动轮播
+            if (bol) {
+                timer = setInterval(go, 3000);
+            }
+        }
+        // autoGo(flag);
+
+        function go() {
+            //计时器的函数
+            _index++;
+            selectPic(_index);
+        }
+        function selectPic(num) {
+            var sid = num;
+            $(".pagination span").eq(num).addClass("active").siblings().removeClass("active");
+            if (sid == 1) sid = 2; else sid = 1;
+            $('.slider' + sid).find(".slider-box .span1").removeClass('wow animated fadeInUp');
+            $('.slider' + sid).find(".slider-box .span2").removeClass('wow animated fadeInDown');
+            $('.slider' + sid).find(".slider-box span").attr('style','');
+            
+            setTimeout(function(){
+                $('.slider' + sid).find(".slider-box .span1").addClass('animated fadeInUp');
+                $('.slider' + sid).find(".slider-box .span2").addClass('animated fadeInDown');
+                $('.slider' + sid).find(".slider-box .span1").attr('style','visibility: visible; animation-name: fadeInUp;');
+                $('.slider' + sid).find(".slider-box .span2").attr('style','visibility: visible; animation-name: fadeInDown;');
+            }, 500);
+            $(".b2-slider").animate({
+                left: -num * sliderBoxWidth,
+            }, 1000, function() {
+                //检查是否到最后一张
+                if (_index == innerGroup.length - 1) {
+                    _index %= 2;
+                    $(".b2-slider").css("left", "0px");
+                    $(".pagination span").eq(0).addClass("active").siblings().removeClass("active");
+                }
+                flag = true;
+            })
+        }
+    </script>
+    <div style="display: none;">
+		<script src="../../public/public.js" type="text/javascript" charset="utf-8"></script>
+	</div>
+</body>
+</html>

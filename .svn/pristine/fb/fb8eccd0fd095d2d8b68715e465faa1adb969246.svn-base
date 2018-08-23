@@ -1,0 +1,352 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,div,
+form,fieldset,legend,button,input,textarea,th,td ,button,input,select,textarea{
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-size: 14px;
+	font-family: "PingFang SC","Microsoft Yahei", "Hiragino Sans GB",arial,sans-serif;
+	-webkit-text-size-adjust: 100%;			
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+a {
+	text-decoration: none;
+}
+
+em {
+	font-style: normal;
+}
+
+ul,ol{
+	list-style:none;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+	outline: none;
+}
+button, input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.flex{
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+body{
+	padding-bottom: 1.1rem;
+}
+.header{
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 100%;
+	height: 1.38rem;
+	background: #FFFFFF;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+img{
+	max-width: 100%;
+}
+
+
+.header .logo{
+	width: 3.42rem;
+	height: 0.66rem;
+	margin-left: 0.33rem;
+}
+.header .r_btn{
+	display: table-cell;
+	vertical-align: middle;
+	width: 1.95rem;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	margin-right: 0.35rem;
+	font-size: 0.30rem;
+	text-align: center;
+	color: #FFFFFF;
+	box-sizing:border-box;
+	border: 1px solid transparent;
+	background: #ff6200;
+	border-radius: 0.3rem;
+}
+.glory{
+	position: relative;
+	width: 100%;
+	height: 5.58rem;
+	box-sizing: border-box;
+	padding: 0.8rem 0 0 0;
+	background: url(../images/glory.jpg) no-repeat;
+	background-size:cover ;
+	border-bottom: 1px solid #212121;
+}
+.glory h4{
+	font-size: 0.38rem;
+	color: #e9c483;
+	text-align: center;
+	margin-bottom:0.55rem;
+}
+.glory h4 span{
+	display: inline-block;
+	line-height: 0.66rem;
+	border-top:1px solid #232323;
+	border-bottom:1px solid #232323;
+}
+.glory h4 i{
+	display: inline-block;
+	width: 0.71rem;
+	height: 0.6rem;
+	background: url(../images/logo_t.png) no-repeat;
+	background-size: cover;
+	margin: 0 0.42rem;
+	vertical-align: sub;
+}
+.glory .box{
+	justify-content: center;
+	text-align: center;
+}
+
+.glory .item{
+	margin: 0 0.22rem;
+	width: 1.7rem;
+	text-align: center;
+}
+.glory .item i{
+	display: block;
+	height: 1.5rem;
+	margin: 0 auto;
+	background: url(../images/glory_icon.png) no-repeat;
+	background-size:5rem 1.5rem ;
+}
+
+.glory .item .gi2{
+	width: 0.53rem;
+	background-position:0 0 ;
+}
+.glory .item .gi3{
+	width: 0.6rem;
+	background-position:-2.17rem 0 ;
+}
+.glory .item .gi4{
+	width: 0.8rem;
+	background-position:-4.2rem 0 ;
+}
+
+.glory .item p{
+	font-size: 0.22rem;
+	color: #f1b765;
+	line-height: 0.3rem;
+	margin-top: 0.23rem;
+}
+
+.footer{
+	background: #020200;
+	padding:0.6rem 0 0.65rem 0;
+}
+.footer .box{
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	flex-flow: wrap;
+	margin-bottom: 0.78rem;
+}
+.footer .item{
+	width: 1.6rem;
+	margin: 0 0.18rem;
+}
+.footer .item i{
+	display: block;
+	margin: 0 auto;
+	height: 0.7rem;
+	background: url(../images/logo-usage.png) no-repeat;
+	background-size:6rem 0.7rem;
+}
+.footer .item p{
+	font-size: 0.24rem;
+	color: #888888;
+	line-height: 0.3rem;
+	margin-top: 0.2rem;
+	text-align: center;
+}
+.footer .item .fi1{
+	width: 0.65rem;
+	background-position:0 0 ;
+}
+.footer .item .fi2{
+	width: 0.63rem;
+	background-position:-1.06rem 0 ;
+}
+.footer .item .fi3{
+	width: 0.8rem;
+	background-position:-2.23rem 0 ;
+}
+.footer .item .fi4{
+	width: 0.65rem;
+	background-position:-3.61rem 0 ;
+}
+.footer .item .fi5{
+	width: 0.7rem;
+	background-position:-4.83rem 0 ;
+}
+.footer .cr{
+	text-align: center;
+	font-size: 0.22rem;
+	color: #666666;
+	padding-top: 0.1rem;
+}
+
+.fixed_bottom{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width:100%;
+	height: 1.1rem;
+	background:#3e3e3e ;
+	z-index: 10;
+}
+.fixed_bottom .close_f{
+	position: absolute;
+	left: 0.15rem;
+	top: 0.15rem;
+	display: block;
+	width: 0.18rem;
+	height: 0.18rem;
+	background: url(../images/fixedb_icon.png) no-repeat 0 0;
+	background-size:1.8rem 0.92rem; 
+}
+.fixed_bottom b{
+	width: 0.95rem;
+	height: 0.95rem;
+	margin-left: 0.65rem;
+	background: url(../images/fixedb_icon.png) no-repeat -0.3rem 0;
+	background-size:1.8rem 0.92rem; 
+}
+.fixed_bottom .con{
+	display: flex;
+	align-items: center;
+}
+.fixed_bottom p{
+	text-align: right;
+	font-size: 0.28rem;
+	color: #e7be78;
+	line-height: 1.4;
+}
+.fixed_bottom p span{
+	font-size: 0.26rem;
+}
+
+.fixed_bottom a{
+	width: 2.15rem;
+	height: 0.68rem;
+	box-sizing: border-box;
+	border: 1px solid #faebc6;
+	font-size:0.26rem ;
+	color: #ebca8d;
+	line-height: 0.68rem;
+	border-radius: 5px;
+	margin: 0 0.32rem 0 0.3rem;
+}
+.fixed_bottom a i{
+	display: inline-block;
+	width: 0.35rem;
+	height: 0.45rem;
+	margin:0 0.22rem;
+	vertical-align: middle;
+	background: url(../images/fixedb_icon.png) no-repeat -1.48rem 0;
+	background-size:1.8rem 0.92rem;
+}
+
+
+.form_box{
+	position: fixed;
+	display: none;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+.form_box .box{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index: 101;
+}
+.form_box .box iframe{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.form_box .box i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: 2.5rem;
+	margin-top: -3.9rem;
+	display: block;
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(../images/close_r.png) no-repeat;
+	background-size:cover ;
+	cursor: pointer;
+	z-index: 103;
+}
+@media only screen and (min-width:1025px ) {
+	body{
+		width: 750px;
+		margin: 0 auto;
+	}
+	.fixed_bottom {
+	    width: 750px;
+	    left: 50%;
+	    margin-left: -375px;
+    }
+
+}

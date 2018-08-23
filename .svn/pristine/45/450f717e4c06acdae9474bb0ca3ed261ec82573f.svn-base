@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public/wap/gi_v1/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+	        function size(){
+	            var width=$(window).width();
+	            if(width > 750){
+	                $('html').css('font-size',function(){
+	                    return 100;
+	                });
+	                return;
+	            }else {
+	                $('html').css('font-size',function(){
+	                    return 100*width/750;
+	                });
+	            }
+	        }
+	        size();
+	        $(window).resize(function(){
+	            size();
+	        });
+	        $(function(){
+				new WOW().init();
+			})	
+	    </script>
+	</head>
+	<body>
+		<div id="header">
+			<script type="text/javascript">
+				$("#header").load("../../public/wap/gi_v1/header.html");
+			</script>
+		</div>
+		<div class="banner">
+			<div class="btit_1 wow fadeInUp">
+				<img src="images/btit_1.png" alt="" />
+			</div>	
+			<div class="btit_2 wow fadeInUp" data-wow-delay="0.3s">
+				<img src="images/btit_2.png" alt="" />
+			</div>
+			<div class="btit_3 wow fadeInUp" data-wow-delay="1s">
+				期货交易指定正规平台
+			</div>
+			<div class="btn_box">
+				<a href="javascript:contact();" class="c_btn">联系客服</a>
+				<a href="javascript:open_form();" class="r_btn">立即开户</a>
+			</div>
+		</div>
+		<div class="first-box">
+			<div class="tit">
+				<span>汇聚全球</span><span>交易产品</span>
+			</div>
+			<div class="box flex">
+				<div class="item wow fadeInLeft">
+					<img src="images/nasdaq.jpg" alt="" />
+				</div>
+				<div class="item wow fadeInRight">
+					<img src="images/dow.jpg" alt="" />
+				</div>
+				<div class="item wow fadeInLeft">
+					<img src="images/hk.jpg" alt="" />
+				</div>
+				<div class="item wow fadeInRight">
+					<img src="images/a50.jpg" alt="" />
+				</div>
+				<div class="item wow fadeInLeft" >
+					<img src="images/dollar.jpg" alt="" />
+				</div>
+				<div class="item wow fadeInRight">
+					<img src="images/ftse.jpg" alt="" />
+				</div>
+				<div class="item wow fadeInLeft">
+					<img src="images/dax.jpg" alt="" />
+				</div>
+				<div class="item wow fadeInRight">
+					<img src="images/more.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="second-box">
+			<div class="tit_box">
+				<p>全球指数五大优势</p>
+				<span>助您决胜指数市场</span>
+			</div>
+			<div class="box flex">
+				<div class="item wow fadeInUp">
+					<div class="icon ic1">
+						<i class="ci1"></i>
+					</div>
+					<div class="txt">
+						<h4>低投高报</h4>
+						<p><i></i>0手续费</p>
+						<p><i></i>8美元即可交易</p>
+					</div>
+				</div>
+				<div class="item wow fadeInUp" data-wow-delay="0.2s">
+					<div class="icon ic2">
+						<i class="ci2"></i>
+					</div>
+					<div class="txt">
+						<h4>杠杆效应</h4>
+						<p><i></i>放大资金</p>
+						<p><i></i>轻松提高收益率</p>
+					</div>
+				</div>
+				<div class="item wow fadeInUp" data-wow-delay="0.4s">
+					<div class="icon ic1">
+						<i class="ci3"></i>
+					</div>
+					<div class="txt">
+						<h4>名师指导</h4>
+						<p><i></i>顶级老师在线</p>
+						<p><i></i>一对一高胜率指导</p>
+					</div>
+				</div>
+				<div class="item wow fadeInUp" data-wow-delay="0.6s">
+					<div class="icon ic2">
+						<i class="ci4"></i>
+					</div>
+					<div class="txt">
+						<h4>24h双向交易</h4>
+						<p><i></i>买涨买跌均盈利</p>
+						<p><i></i>全天候机遇无限</p>
+					</div>
+				</div>
+				<div class="item wow fadeInUp" data-wow-delay="0.8s">
+					<div class="icon ic1">
+						<i class="ci5"></i>
+					</div>
+					<div class="txt">
+						<h4>闪电出金</h4>
+						<p><i></i>入金便捷</p>
+						<p><i></i>出金24小时内到账</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="thib-box">
+			<div class="tit_box">
+				<p>免费领取投资赠金</p>
+				<span>赠金随时变现 赚钱快人一步</span>
+			</div>
+			<div class="box flex">
+				<div class="item wow fadeInZ">
+					<div class="img">
+						<img src="images/man1.png"/>
+					</div>
+					<div class="txt it1">
+						<p>GL1****31</p>
+						<h4>领取了<i></i></h4>
+						<span>涨跌都赚钱，0.01手就可<br />交易快捷便利</span>
+					</div>
+				</div>
+				<div class="item wow fadeInZ" data-wow-delay="0.3s">
+					<div class="img">
+						<img src="images/man2.png"/>
+					</div>
+					<div class="txt it2">
+						<p>GL1****55</p>
+						<h4>领取了<i></i></h4>
+						<span>涨跌都赚钱，0.01手就可<br />交易快捷便利</span>
+					</div>
+				</div>
+				<div class="item wow fadeInZ" data-wow-delay="0.6s">
+					<div class="img">
+						<img src="images/man3.png"/>
+					</div>
+					<div class="txt it3">
+						<p>GL1****81</p>
+						<h4>领取了<i></i></h4>
+						<span>出金速度杠杠的，快至24 <br />小时到账了</span>
+					</div>
+				</div>
+				<div class="item wow fadeInZ" data-wow-delay="0.9s">
+					<div class="img">
+						<img src="images/man4.png"/>
+					</div>
+					<div class="txt it4">
+						<p>GL1****41</p>
+						<h4>领取了<i></i></h4>
+						<span>老师在线指导，视频直播<br />解盘，让新手也能玩</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fourth-box">
+			<div class="tit_box">
+				<p>简单四步 轻松盈利</p>
+				<span>抓紧上车机会就现在</span>
+			</div>
+			<div class="box flex">
+				<div class="item fi1 wow fadeIn" data-wow-offset="85">
+					<i></i>
+					<p>注册交易账号</p>
+					<a href="javascript:open_form();">开立账户</a>
+				</div>
+				<i class="t_icon t1 wow fadeIn" data-wow-delay="0.3s" data-wow-offset="85"></i>
+				<div class="item fi2 wow fadeIn" data-wow-delay="0.3s" data-wow-offset="85">
+					<i></i>
+					<p>下载全球指交易软件</p>
+					<a href="javascript:;" class="downLoad">立即下载</a>
+				</div>
+				<i class="t_icon t2 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="85"></i>
+				<div class="item fi4 wow fadeIn" data-wow-delay="0.9s" data-wow-offset="85">
+					<i></i>
+					<p>提取盈利</p>
+					<a href="javascript:contact();">咨询客服</a>
+				</div>
+				<i class="t_icon t3 wow fadeIn" data-wow-delay="0.9s" data-wow-offset="85"></i>				
+				<div class="item fi3 wow fadeIn" data-wow-delay="0.6s" data-wow-offset="85">
+					<i></i>
+					<p>开启指数交易大门</p>
+					<a href="javascript:contact();">新手指引</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<script type="text/javascript">
+				$("#footer").load("../../public/wap/gi_v1/footer.html");
+			</script>
+		</div>
+		<div style="display: none;">
+			<script src="../../public/public.js" type="text/javascript" charset="utf-8"></script>
+		</div>
+	</body>
+</html>
